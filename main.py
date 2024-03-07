@@ -22,10 +22,10 @@ if fl is not None:
     st.write(filename)
     df = pd.read_excel(filename)
 else:
-    os.chdir(
-        "C://Users//emher//Documents//Data Engineer//STREAMLIT//1+Project+Superstore//data"
-    )
-    df = pd.read_excel("superstore.xls")  # if csv use encoding= "ISO-8859-1"
+    # os.chdir(
+    #     "C://Users//emher//Documents//Data Engineer//STREAMLIT//1+Project+Superstore//data"
+    # )
+    df = pd.read_excel("data/superstore.xls")  # if csv use encoding= "ISO-8859-1"
 
 col1, col2 = st.columns((2))
 
